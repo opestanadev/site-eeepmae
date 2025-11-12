@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+header {
+    background-color: #07592B;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #12402663;
+}
+
+header img#logoEeep {
+    width: 86px;
+}
+
+header nav {
+    display: flex;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px;
+}
