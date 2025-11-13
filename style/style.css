@@ -99,6 +99,13 @@ main {
     border-radius: 0px 0px 15px 15px;
 }
 
+main h1 {
+    font-family: 'Sora', sans-serif;
+    text-transform: uppercase;
+    color: #cb6115;
+    font-size: 2.4em;
+}
+
 footer {
     background-color: #124026;
     color: white;
