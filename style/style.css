@@ -124,6 +124,11 @@ li{
     margin-bottom: 15px;
 }
 
+main h2.align-right {
+    background-image: linear-gradient(to left, #df7021, transparent);
+    text-align: right;
+}
+
 main p {
     margin: 15px 0;
     text-align: justify;
