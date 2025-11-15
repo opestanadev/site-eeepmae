@@ -3,6 +3,10 @@
 body {
     margin: 0;
     font-family: 'Sora', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,6 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 4px solid #12402663;
+    flex-shrink: 0;
 }
 
 header img#logoEeep {
@@ -97,12 +102,14 @@ nav a {
 main {
     min-width: 300px;
     max-width: 1000px;
+    width: 90%;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
     background-color: #E6E6E6;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.447);
     border-radius: 0px 0px 15px 15px;
+    flex-grow: 1;
 }
 
 main h1 {
@@ -139,14 +146,15 @@ main p {
 }
 
 .matricula{
-    width: 100vw; 
-    height: calc(100vh - 200px); 
+    width: 100%; 
+    height: auto; 
     display: flex; 
     justify-content: space-between; 
     align-items: stretch; 
     background-color: #ffffff;
     margin-top: 0;
     border-radius: 0;
+    flex-grow: 1;
 }
 
 .esquerda {
@@ -154,7 +162,7 @@ main p {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Centraliza verticalmente */
     background-color: #ffffff;
     border-radius: 20px 0 0 20px;
 }
@@ -196,13 +204,15 @@ input[type="submit"] {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    max-width: 50vw;
 }
 
 #foto-matricula {
     width: 100%;
-    height: 700px;
+    aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 40% 0 0 40%; /* left-top, right-top, right-bottom, left-bottom */
+    border-radius: 50% 0 0 50%;
+    max-width: 100%;
 }
 
 #adm{
@@ -217,4 +227,5 @@ footer {
     font-size: 0.8em;
     padding: 20px;
     clear: both;
+    flex-shrink: 0;
 }
